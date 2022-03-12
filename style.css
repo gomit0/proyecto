@@ -29,11 +29,11 @@ h3 {
   text-align: center;
 }
 .cuerpo {
-  width: 100%;
+  width: 90%;
   margin: 10px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20px 8fr 20px;
+  grid-template-rows: 1fr 8fr 20px;
   grid-template-areas:
     "cabecera cabecera"
     "centro centro"
@@ -41,11 +41,14 @@ h3 {
   gap: 10px;
 }
 .cabecera {
+  width: 100% auto;
+  margin: 10px;
   grid-area: cabecera;
   display: grid;
   grid-template-columns: 1fr 6fr;
   grid-template-rows: 1fr;
   grid-template-areas: "logo menus";
+  gap: 10px;
 }
 
 .logo,
@@ -151,7 +154,10 @@ h2 {
 }
 /* ---------- Fin galeria------*/
 /* ------productos--------*/
+
 .productos{
+  width: 100%;
+  margin: 10px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr ;
@@ -248,6 +254,12 @@ flex-direction: column;}
   .galery {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .productos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8 1fr);
   }
 }
 @media screen and (max-width: 500px) {
