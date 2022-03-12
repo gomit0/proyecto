@@ -26,6 +26,7 @@ h2 {
 h3 {
   font-family: "Righteous", cursive;
   text-transform: capitalize;
+  text-align: center;
 }
 .cuerpo {
   width: 100%;
