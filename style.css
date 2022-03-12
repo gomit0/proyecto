@@ -165,14 +165,7 @@ h2 {
 }
 /*-------fin productos-------*/
 /*--------Nosotros-------*/
-.nosotros p {
-  font-family: "Bebas Neue", cursive;
-  color: blue;
-  font-size: 1rem;
-}
-.equipo {
-  color: #ccc;
-}
+
 
 /*----------Contacto----------*/
 fieldset {
