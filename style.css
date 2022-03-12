@@ -58,6 +58,7 @@ nav.logo {
   grid-area: logo;
 }
 nav.menus {
+  height: 1rem;
   grid-area: menus;
 }
 .centro {
@@ -148,7 +149,14 @@ h2 {
   box-shadow: 1px 5px 20px 1px;
 }
 /* ---------- Fin galeria------*/
-
+/* ------productos--------*/
+.productos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  gap: 10px;
+}
+/*-------fin productos-------*/
 /*--------Nosotros-------*/
 .nosotros p {
   font-family: "Bebas Neue", cursive;
@@ -233,8 +241,7 @@ input[type="reset"]:hover {
 @media screen and (max-width: 768px) {
   .cabecera {
 display: flex;
-flex-direction: column;
-}
+flex-direction: column;}
 }
 @media screen and (max-width: 768px) {
   .galery {
