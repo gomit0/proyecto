@@ -36,37 +36,25 @@
         <section class="formulario">
             <fieldset>
             <legend></legend>
-                <form action="">
+                <form class="form-floating">
 
-                    <div class="lbl">
-                    <label for="ver">Completa tu nombre y apellido </label>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
+                        <label for="floatingInput">Nombre</label>
                     </div>
-                    <div class="inpt">
-                    <input type="text" name="nombre" placeholder="Pedro Aranguiz">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="nombre@example.com">
+                        <label for="floatingInput">Email</label>
                     </div>
-
-                    <div class="lbl">
-                    <label for="email">Completa tu email </label>
-                    </div>
-                    <div class="inpt">
-                    <input type="email" name="email" placeholder="Pedro.Aranguiz@mailg.com" required>
-                    </div>
-
-                    <div class="comnt">
-                    <div class="lbl">
-                    <label for="comment">Dejanos tu comentario</label>
-                    </div>
-                    <div class="inpt">
-                    <textarea name="comment" id="" cols="30" rows="10"></textarea>
-                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Comments</label>
                     </div>
 
-                    <div>    
-                    <input type="submit" value="enviar">
-                    </div>
-                    
-                    <div>
-                    <input type="reset" value="limpiar">
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+        
+                        <button class="btn btn-primary" type="reset">Limpiar</button>
                     </div>
                 </form>
             </fieldset>
