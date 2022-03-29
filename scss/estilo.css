@@ -135,18 +135,45 @@ body .cabecera nav .dropdown:hover .dropdown-content {
   }
 }
 
-.card-deck {
+.nuestro section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh;
 }
 
-.card-deck .bg-transparent {
-  margin: 100px;
+.card {
+  background-color: brown;
+  border-radius: 50px;
+  -webkit-box-shadow: 21px 21px 42px;
+          box-shadow: 21px 21px 42px;
 }
 
-.card-deck .bg-transparent img {
-  height: 350px;
+.jefe, .decorador, .cocinero {
   width: 300px;
+  height: 365px;
+}
+
+.jefe .card-img, .decorador .card-img, .cocinero .card-img {
+  width: 360px;
+  height: 399px;
+  border-radius: 10px;
+}
+
+.card-body .card-title {
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-body .card-text {
+  font-family: "Righteous", cursive;
+  text-align: center;
 }
 /*# sourceMappingURL=estilo.css.map */
