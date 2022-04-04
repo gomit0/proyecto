@@ -3,11 +3,12 @@ $card-img: height 500px;
 
 
 @mixin carto($radius , $eje ){
-  background-color: brown;
   border-radius: $radius;
   box-shadow: $eje $eje ($eje*2);
 }
-
+h1{
+  text-align: center;
+}
 
 * {
     margin: 0;
@@ -17,12 +18,9 @@ $card-img: height 500px;
   }
 
 body {
+
     h2{text-align: center;}
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.8),
-        rgba(255, 255, 255, 0.8)
-      ),
-      url(../img/bg.jpg);
+    background-color: white;
     position: static;
     .cabecera {
         width: 100% auto;
@@ -33,7 +31,6 @@ body {
         grid-template-rows: 1fr;
         grid-template-areas: "logo menus";
         gap: 10px;
-      
       .logo,
       .menus,
       .centro,
@@ -47,6 +44,7 @@ body {
       nav.menus {
         height: 1rem;
         grid-area: menus;
+        
       }
       .centro {
         grid-area: centro;
@@ -60,7 +58,7 @@ body {
       
      ul {
         list-style: none;
-        background-color: rgb(30, 241, 171);
+        background-color: rgb(43, 241, 208);
         display: flex;
         justify-content: flex-end;
       
@@ -71,7 +69,7 @@ body {
         display: block;
       }
       li:hover {
-        background-color: antiquewhite;
+        background-color: rgb(20, 149, 172);
         color: rgb(78, 9, 9);
         font-weight: bold;
       }
@@ -93,7 +91,7 @@ body {
       }
       
       .dropdown-content a:hover {
-        background-color: #f1f1f1;
+        background-color: rgb(20, 149, 172);
       }
       
       .dropdown:hover .dropdown-content {
@@ -123,19 +121,11 @@ body {
     }
 
 }
-.card{
-  @include carto( 50px , 21px );
-}
-.jefe, .decorador, .cocinero{
-  width: 300px;
-  height: 365px;
 
-.card-img{
- width: 360px;
- height: 399px;
- border-radius: 10px;
-} 
-}
+.row{
+  display: flex;
+  justify-content: space-evenly;
+
 .card-body{
   
 .card-title{
@@ -145,6 +135,14 @@ body {
 }
 .card-text{
   font-family: "Righteous", cursive;
-  text-align: center;
+  font-size: small;
 }
+a{
+
+  display: flex;
+  justify-content:center;
+ 
+}}}
+footer{
+  background-color: rgb(6, 128, 128);
 }

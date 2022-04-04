@@ -1,3 +1,6 @@
+h1 {
+  text-align: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +8,7 @@
   font-family: "Righteous", cursive; }
 
 body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/bg.jpg);
+  background-color: white;
   position: static; }
   body h2 {
     text-align: center; }
@@ -38,7 +41,7 @@ body {
       text-align: end; }
       body .cabecera nav ul {
         list-style: none;
-        background-color: #1ef1ab;
+        background-color: #2bf1d0;
         display: flex;
         justify-content: flex-end; }
         body .cabecera nav ul a {
@@ -47,7 +50,7 @@ body {
           padding: 0.7rem;
           display: block; }
         body .cabecera nav ul li:hover {
-          background-color: antiquewhite;
+          background-color: #1495ac;
           color: #4e0909;
           font-weight: bold; }
       body .cabecera nav .dropdown-content {
@@ -64,7 +67,7 @@ body {
         display: block;
         text-align: left; }
       body .cabecera nav .dropdown-content a:hover {
-        background-color: #f1f1f1; }
+        background-color: #1495ac; }
       body .cabecera nav .dropdown:hover .dropdown-content {
         display: block; }
     @media screen and (max-width: 768px) {
@@ -82,24 +85,19 @@ body {
   align-items: center;
   height: 60vh; }
 
-.card {
-  background-color: brown;
-  border-radius: 50px;
-  box-shadow: 21px 21px 42px; }
+.row {
+  display: flex;
+  justify-content: space-evenly; }
+  .row .card-body .card-title {
+    font-family: "Righteous", cursive;
+    text-transform: uppercase;
+    text-align: center; }
+  .row .card-body .card-text {
+    font-family: "Righteous", cursive;
+    font-size: small; }
+  .row .card-body a {
+    display: flex;
+    justify-content: center; }
 
-.jefe, .decorador, .cocinero {
-  width: 300px;
-  height: 365px; }
-  .jefe .card-img, .decorador .card-img, .cocinero .card-img {
-    width: 360px;
-    height: 399px;
-    border-radius: 10px; }
-
-.card-body .card-title {
-  font-family: "Righteous", cursive;
-  text-transform: uppercase;
-  text-align: center; }
-
-.card-body .card-text {
-  font-family: "Righteous", cursive;
-  text-align: center; }
+footer {
+  background-color: #068080; }
