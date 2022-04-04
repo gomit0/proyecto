@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Pasteleria</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="description" content="Somos una clínica odontológica enfocada en nuestros pacientes con un equipo multidisciplinario de excelencia, que abarca todas las especialidades odontológicas">
+    <meta name="keywords"  content="dentista, dientes, brackets, ondodoncia, masilofacial, tratamiento dental, ortodoncia">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Clinica Samoa</title>
 </head>
 <body>
+    <h1>Clínica Odontológica Samoa</h1>
     <div class="cuerpo">
     <header class="cabecera">
         <div class="logo">
-            <h1>Pasteleria</h1>
+
+            <a href="index.html"><img src="./img/Vector-Tooth-PNG-File.png" alt="" width="100px" height="100px"></a>
         </div>
         
         <nav class="menus">
             <ul>
-                <li class="dropdown"><a href="index.html" >Inicio</a>
-                    <div class="dropdown-content">
-                        <a href="index.html#galeria">Mas Vendidos</a>
-                        <a href="index.html#galeria">Galeria</a>
-                    </div>
-                </li>    
-                <li><a href="productos.html">Productos</a></li>
+                <li class="dropdown"><a href="index.html" >Inicio</a></li>    
+                <li><a href="especialidades.html">Especialidades</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -33,120 +36,70 @@
     </header>
     <main class="centro">
         <div class="container">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./img/carrusel/1.jpg" class="d-block w-100" alt="" style="width: 100%; height: 800px;">
+                    <img src="./img/carrusel/clinica1.jpg" class="d-block w-100 h-100" alt="">
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/carrusel/2.jpg" class="d-block w-100" alt="" style="width: 100%; height: 800px;">
+                    <img src="./img/carrusel/clinica2.jpg" class="d-block w-100 h-100" alt="">
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/carrusel/3.jpg" class="d-block w-100" alt="" style="width: 100%; height: 800px;">
+                    <img src="./img/carrusel/clinica3.jpg" class="d-block w-100 h-100" alt="">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span class="visually-hidden">Anterior</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                  <span class="visually-hidden">Siguiente</span>
                 </button>
-              </div>
-        <section class="rapido">
-            <h2>Los Mas Pedidos</h2>
-            <div class="pedidos">
+            </div>
+        <section class="rapido" id="masven">
+            <h2>Especialidades</h2>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-g-4">
 
-                <div class="mas">
-                    <a href="./productos.html"> 
-                        <img src="./img/jefe.jpg">
-                    </a>
-                    <div class="mastxt">
-                        <h3></h3>
+                <div class="card bg-transparent" style="width: 18rem;">
+                    <img src="./img/espec/implantes-dentales.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Implantes Dentales</h5>
+                      <p class="card-text">Los Implantes Dentales (o implantes dentales oseointegrados) son piezas de titanio con forma de tornillo, especialmente diseñados para ser…</p>
+                      <a href="./especialidades.html#Prodd" class="btn btn-primary">Más info</a>
                     </div>
-                </div>                
-                <div class="mas">
-                    <a href="./productos.html"> 
-                        <img src="./img/jefe.jpg">
-                    </a>
-                    <div class="mastxt"><h3>
-                         </h3>
-                        </div>
+                </div> 
+                <div class="card bg-transparent" style="width: 18rem;">
+                    <img src="./img/espec/rehabilitacion.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Rehabilitación Oral</h5>
+                      <p class="card-text">a Rehabilitación Oral es la especialidad de la odontología que primero establece un completo diagnóstico del o los problemas dentales que tiene el…</p>
+                      <a href="./especialidades.html#Prodd" class="btn btn-primary">Más info</a>
+                    </div>
                 </div>
-                <div class="mas">
-                    <a href="./productos.html"> 
-                        <img src="./img/jefe.jpg">
-                    </a>
-                    <div class="mastxt">
-                        <h3>
-                         </h3>
-                        </div>
+                <div class="card bg-transparent" style="width: 18rem;">
+                    <img src="./img/espec/frenillos.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Ortodoncia, Frenillos o Brackets</h5>
+                      <p class="card-text">La Ortodoncia es la especialidad de la odontología que previene y trata los problemas de posición y deformaciones que afectan a las estructuras…</p>
+                      <a href="./especialidades.html#Prodd" class="btn btn-primary">Más info</a>
+                    </div>
                 </div>
-                <div class="mas">
-                    <a href="./productos.html">
-                        <img src="./img/jefe.jpg">
-                    </a>
-                    <div class="mastxt">
-                        <h3> 
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </h3>
+                <div class="card bg-transparent" style="width: 18rem;">
+                    <img src="./img/espec/maxilo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cirugía Máxilo Facial</h5>
+                      <p class="card-text">La Cirugía Maxilofacial es la especialidad de la odontología que diagnostica y tratar quirúrgicamente patologías y lesiones de boca, maxilar, rostro y estructuras…</p>
+                      <a href="./especialidades.html#Prodd" class="btn btn-primary">Más info</a>
+                    </div>
                 </div>
-                </div>
-                <div class="mas">
-                    <a href="./productos.html"> 
-                        <img src="./img/jefe.jpg">
-                    </a>
-                    <div class="mastxt">
-                        <h3>Lorem, ipsum dolor.
-                         </h3>
-                        </div>
-                </div>
-                <div class="mas">
-                    <a href="./productos.html"> 
-                        <img src="./img/jefe.jpg">
-                    </a>
-                    <div class="mastxt">
-                        <h3>
-                         </h3>
-                        </div>
-                </div>
-                <div class="mas">
-                    <a href="./productos.html"> 
-                        <img src="./img/jefe.jpg">
-                    </a>
-                    <div class="mastxt">
-                        <h3>
-                         </h3>
-                        </div>
-                </div>
+
             </div>
+        </section>
+        <section>
 
         </section>
-        <section class="galeria">
-            <h2>Galeria</h2>
-            <div class="galery">
-                <div class="torta uno">
-                <img src="./img/cumplea.jpg" alt="torta 1" >
-            </div>
-            <div class="torta dos">
-                <img src="./img/valentin.jpg" alt="torta 2" >
-            </div>
-            <div class="torta tres">
-                <img src="./img/boda.jpg" alt="boda" >
-            </div>
-            <div class="torta cuatro">
-                <img src="./img/cumplea.jpg" alt="cumpleania" >
-            </div>
-            <div class="torta cinco">
-                <img src="./img/cumplea.jpg" alt="cumpleania" >
-            </div>
-            <div class="torta seis">
-                <img src="./img/cumplea.jpg" alt="cumpleania" >
-            </div>
-            </div>
-        </section>
-    </div>
+        </div>
     </main>
     <footer class="pie">
         <h5>Todos los derechos reservados &copy;</h5>

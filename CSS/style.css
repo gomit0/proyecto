@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Righteous", cursive; }
+
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/bg.jpg);
+  position: static; }
+  body h2 {
+    text-align: center; }
+  body .cabecera {
+    width: 100% auto;
+    margin: 10px;
+    grid-area: cabecera;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo menus";
+    gap: 10px; }
+    body .cabecera .logo,
+    body .cabecera .menus,
+    body .cabecera .centro,
+    body .cabecera .pie {
+      text-align: center;
+      border-radius: 3px; }
+    body .cabecera nav.logo {
+      grid-area: logo; }
+    body .cabecera nav.menus {
+      height: 1rem;
+      grid-area: menus; }
+    body .cabecera .centro {
+      grid-area: centro; }
+    body .cabecera .pie {
+      grid-area: pie; }
+    body .cabecera nav {
+      padding: 1rem;
+      text-align: end; }
+      body .cabecera nav ul {
+        list-style: none;
+        background-color: #1ef1ab;
+        display: flex;
+        justify-content: flex-end; }
+        body .cabecera nav ul a {
+          color: white;
+          text-decoration: none;
+          padding: 0.7rem;
+          display: block; }
+        body .cabecera nav ul li:hover {
+          background-color: antiquewhite;
+          color: darkred;
+          font-weight: bold; }
+      body .cabecera nav .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #1ef1ab;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1; }
+      body .cabecera nav .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left; }
+      body .cabecera nav .dropdown-content a:hover {
+        background-color: #f1f1f1; }
+      body .cabecera nav .dropdown:hover .dropdown-content {
+        display: block; }
+    @media screen and (max-width: 768px) {
+      body .cabecera .cabecera {
+        display: flex;
+        flex-direction: column; } }
+  @media screen and (max-width: 768px) {
+    body .cuerpo {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6 1fr); } }
+
+.nuestro section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60vh; }
+
+.card {
+  background-color: brown;
+  border-radius: 50px;
+  box-shadow: 21px 21px 42px; }
+
+.jefe, .decorador, .cocinero {
+  width: 300px;
+  height: 365px; }
+  .jefe .card-img, .decorador .card-img, .cocinero .card-img {
+    width: 360px;
+    height: 399px;
+    border-radius: 10px; }
+
+.card-body .card-title {
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  text-align: center; }
+
+.card-body .card-text {
+  font-family: "Righteous", cursive;
+  text-align: center; }
+
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "Righteous", cursive;
+  }
+  
+  body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(../img/bg.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/bg.jpg);
+    position: static;
+  }
+  
+  body h2 {
+    text-align: center;
+  }
+  
+  body .cabecera {
+    width: 100% auto;
+    margin: 10px;
+    grid-area: cabecera;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 6fr;
+        grid-template-columns: 1fr 6fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo menus";
+    gap: 10px;
+  }
+  
+  body .cabecera .logo,
+  body .cabecera .menus,
+  body .cabecera .centro,
+  body .cabecera .pie {
+    text-align: center;
+    border-radius: 3px;
+  }
+  
+  body .cabecera nav.logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+  }
+  
+  body .cabecera nav.menus {
+    height: 1rem;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: menus;
+  }
+  
+  body .cabecera .centro {
+    grid-area: centro;
+  }
+  
+  body .cabecera .pie {
+    grid-area: pie;
+  }
+  
+  body .cabecera nav {
+    padding: 1rem;
+    text-align: end;
+  }
+  
+  body .cabecera nav ul {
+    list-style: none;
+    background-color: #1ef1ab;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  
+  body .cabecera nav ul a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: block;
+  }
+  
+  body .cabecera nav ul li:hover {
+    background-color: antiquewhite;
+    color: darkred;
+    font-weight: bold;
+  }
+  
+  body .cabecera nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1ef1ab;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  body .cabecera nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  body .cabecera nav .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  body .cabecera nav .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    body .cabecera .cabecera {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    body .cuerpo {
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+      -ms-grid-rows: (1fr)[6];
+          grid-template-rows: repeat(6 1fr);
+    }
+  }
+  
+  .nuestro section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60vh;
+  }
+  
+  .card {
+    background-color: brown;
+    border-radius: 50px;
+    -webkit-box-shadow: 21px 21px 42px;
+            box-shadow: 21px 21px 42px;
+  }
+  
+  .jefe, .decorador, .cocinero {
+    width: 300px;
+    height: 365px;
+  }
+  
+  .jefe .card-img, .decorador .card-img, .cocinero .card-img {
+    width: 360px;
+    height: 399px;
+    border-radius: 10px;
+  }
+  
+  .card-body .card-title {
+    font-family: "Righteous", cursive;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .card-body .card-text {
+    font-family: "Righteous", cursive;
+    text-align: center;
+  }
+  /*# sourceMappingURL=estilo.css.map */
