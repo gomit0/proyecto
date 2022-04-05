@@ -1,21 +1,17 @@
-$card-w: width 326px;
-$card-img: height 500px;
-
-
-@mixin carto($radius , $eje ){
-  border-radius: $radius;
-  box-shadow: $eje $eje ($eje*2);
+@mixin carto($cw , $ch ){
+  width: $cw;
+  height: $ch;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Righteous", cursive;
+  list-style: none;
 }
 h1{
   text-align: center;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Righteous", cursive;
-  }
 
 body {
 
@@ -58,12 +54,12 @@ body {
       
      ul {
         list-style: none;
-        background-color: rgb(43, 241, 208);
+        background-color: rgb(217, 228, 222);
         display: flex;
         justify-content: flex-end;
       
        a {
-        color: white;
+        color: rgb(72, 11, 241);
         text-decoration: none;
         padding: 0.7rem;
         display: block;
@@ -123,26 +119,90 @@ body {
 }
 
 .row{
+  height: auto;
   display: flex;
   justify-content: space-evenly;
+  .card{
+  @include carto( 280px, 500px);
 
-.card-body{
-  
-.card-title{
-  font-family: "Righteous", cursive;
-  text-transform: uppercase;
-  text-align: center;
-}
-.card-text{
-  font-family: "Righteous", cursive;
-  font-size: small;
-}
-a{
+   .card-body{
 
-  display: flex;
-  justify-content:center;
+      .card-title{
+        font-family: "Righteous", cursive;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .card-text{
+        font-family: "Righteous", cursive;
+        font-size: small;
+      }
+      a{
+        display: flex;
+        justify-content:center;
  
-}}}
-footer{
-  background-color: rgb(6, 128, 128);
+      }
+    }
+  }
 }
+footer{
+  display: grid;
+  background-color: rgb(217, 228, 222);
+  grid-template-areas: "logs ubica hora" 
+  "none derecho derecho";
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 3fr 1fr;
+
+
+  .ubica{
+    grid-area: ubica;
+    h4{
+    font-size: 10px;
+  }
+  .li_ti h4{
+    font-size: 16px;
+  }}
+
+  .hora{
+    grid-area: hora;
+    h4{
+    font-size: 10px;
+  }.li_ti h4{
+    font-size: 16px;
+  }}
+  .derecho{
+    grid-area: derecho;
+  }
+
+}
+main{
+  height: auto;
+  .equipo{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .card{
+      @include carto( 220px, 380px);
+      p{
+        font-size: 10px;
+      }
+    }
+
+  }
+}
+
+.centro{
+.productos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  img{
+    @include carto( 250px, 200px)
+  }
+  h5{
+    font-size: 16px;
+  }
+  p{
+    font-size: 10px;
+  }
+}}
