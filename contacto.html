@@ -36,37 +36,79 @@
         </header>
     <main class="centro">
         <h2>Solicita tu Hora</h2>
-        <section class="formulario">
-            <fieldset>
-            <legend></legend>
-                <form class="form-floating">
-
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
-                        <label for="floatingInput">Nombre</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="nombre@example.com">
-                        <label for="floatingInput">Email</label>
-                    </div>
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea">Commentario</label>
-                    </div>
-
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Pedir Hora</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="well well-sm">
+                        <form class="form-horizontal" method="post">
+                            <fieldset>
+                                <legend class="text-center header">Contact us</legend>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                    </div>
+                                </div>
         
-                        <button class="btn btn-primary" type="reset">Limpiar</button>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="email" name="email" type="email" placeholder="Direccion Email" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Pide tu hora aqui. Maximo 2 dias de tiempo de respuesta" rows="7"></textarea>
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
-                </form>
-            </fieldset>
-        </section>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <div class="panel panel-default">
+                            <div class="text-center header">Encuentranos</div>
+                            <div class="panel-body text-center">
+                                <h4>Direccion</h4>
+                                <div>
+                                Av. Matta 3195<br />
+                                Santiago Centro. RM<br />
+                                +(562) 2314 6721<br />
+                                contacto@samoaclinica.cl<br />
+                                </div>
+                                <hr />
+                                <div id="map-container-google-1" class="z-depth-1-half map-container">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.6665910473344!2d-70.64337418379688!3d-33.4579919052875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c56dad0fedad%3A0xc6efb98374a3471a!2sAv.%20Manuel%20Antonio%20Matta%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses-419!2sus!4v1649123962239!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
      </main>
 
      <footer class="pie">
         <div class="logo">
-       <a href="index.html"><img src="./img/Vector-Tooth-PNG-File.png" alt="" width="100px" height="100px"></a>
+       <a href="index.html"><img src="./img/Vector-Tooth-PNG-File.png" alt="mapa" width="100px" height="100px"></a>
         </div>
        <div class="ubica"><ul>
        <li class="li_ti"><h4>Informacion de Contacto</h4></li>
