@@ -134,9 +134,14 @@ main {
     justify-content: space-evenly; }
     main .equipo .card {
       width: 220px;
-      height: 380px; }
+      height: 380px;
+      opacity: 0.9;
+      transition: transform .2s; }
       main .equipo .card p {
         font-size: 10px; }
+    main .equipo .card:hover {
+      transform: scale(1.2);
+      opacity: 1; }
 
 .centro .productos {
   display: flex;
@@ -149,3 +154,15 @@ main {
     font-size: 16px; }
   .centro .productos p {
     font-size: 10px; }
+
+@media (min-width: 240px) {
+  Footer {
+    background-color: yellow; } }
+
+@media (min-width: 600px) {
+  Footer {
+    background-color: #8f8fe2; } }
+
+@media (min-width: 1024px) {
+  Footer {
+    background-color: #94dddd; } }

@@ -304,9 +304,16 @@
     "url": "https://github.com/gomit0/proyecto/issues"
   },
   "homepage": "https://github.com/gomit0/proyecto#readme",
-  "description": "clinica odontologica",
+  "description": "clinica odontologica ubicada en el corazon de Santiago. Somos una clínica odontológica enfocada en nuestros pacientes con un equipo multidisciplinario de excelencia, que abarca todas las especialidades odontológicas",
   "keywords": [
     "odontologia",
-    "dental"
+    "dental",
+    "tratamiento",
+    "dentista", 
+    "dientes", 
+    "brackets", 
+    "ondodoncia", 
+    "masilofacial", 
+    "ortodoncia"
   ]
 }

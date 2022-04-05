@@ -1,2 +1,0 @@
-Se agregan keywords y descripcion de la pagina,
-en pagina nosotros; se agregaron mixin, include, variables y descripcion del equipo de trabajo
