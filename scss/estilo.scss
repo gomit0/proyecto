@@ -1,3 +1,5 @@
+/** @format */
+
 @mixin carto($cw, $ch) {
   width: $cw;
   height: $ch;
@@ -219,7 +221,6 @@ main {
       padding: 12px;
       @media only screen and (max-width: 768px) {
         width: 50%;
-        
       }
       @media only screen and (max-width: 368px) {
         width: 100%;
@@ -234,9 +235,6 @@ main {
         font-size: 10px;
       }
     }
-
-
-    
   }
 }
 .container {
@@ -261,14 +259,14 @@ main {
 Footer {
   @include breakpoint(mobile) {
     background-color: rgb(228, 228, 163);
-    .logo{
-      @include carto(50px,50px )
+    .logo {
+      @include carto(50px, 50px);
     }
   }
   @include breakpoint(tablet) {
     background-color: rgb(143, 143, 226);
-    .logo{
-      @include carto(50px,50px )
+    .logo {
+      @include carto(50px, 50px);
     }
   }
   @include breakpoint(desktop) {
@@ -277,7 +275,6 @@ Footer {
 }
 
 @media only screen and (max-width: 768px) {
-  
   .cabecera {
     .logo {
       flex: 100%;
@@ -286,7 +283,6 @@ Footer {
       flex: 100%;
     }
   }
-
 }
 @media only screen and (max-width: 375px) {
   .cabecera {
@@ -302,15 +298,14 @@ Footer {
         flex-wrap: wrap;
         justify-content: space-evenly;
 
-      
-      li {
-        flex: 100%;
-         a {
-          display: block;
-          padding: .5em 1em;
-
+        li {
+          flex: 100%;
+          a {
+            display: block;
+            padding: 0.5em 1em;
+          }
+        }
+      }
     }
-    }}
-  }
   }
 }
