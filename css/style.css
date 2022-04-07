@@ -103,7 +103,7 @@ body {
 footer {
   display: grid;
   background-color: #d9e4de;
-  grid-template-areas: "logs ubica hora"  "none derecho derecho";
+  grid-template-areas: "logs ubica hora" "none derecho derecho";
   grid-template-columns: 1fr 2fr 2fr;
   grid-template-rows: 3fr 1fr; }
   footer .ubica {
@@ -120,9 +120,6 @@ footer {
       font-size: 16px; }
   footer .derecho {
     grid-area: derecho; }
-  footer .gmap {
-    width: 600px auto;
-    height: 450px auto; }
 
 main {
   height: auto; }
@@ -135,7 +132,7 @@ main {
       width: 220px;
       height: 380px;
       opacity: 0.9;
-      transition: transform .2s; }
+      transition: transform 0.2s; }
       main .equipo .card p {
         font-size: 10px; }
     main .equipo .card:hover {
@@ -146,21 +143,47 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
-  .centro .productos img {
-    width: 100%;
-    height: auto; }
-  .centro .productos h5 {
-    font-size: 16px; }
-  .centro .productos p {
-    font-size: 10px; }
+  .centro .productos .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+    width: 25%;
+    padding: 12px; }
+    @media only screen and (max-width: 768px) {
+      .centro .productos .card {
+        width: 50%; } }
+    @media only screen and (max-width: 368px) {
+      .centro .productos .card {
+        width: 100%; } }
+    .centro .productos .card img {
+      width: 100%;
+      height: auto; }
+    .centro .productos .card h5 {
+      font-size: 16px; }
+    .centro .productos .card p {
+      font-size: 10px; }
+
+.container .row .gmap {
+  width: 600px auto;
+  height: 450px auto; }
 
 @media (min-width: 240px) {
   Footer {
-    background-color: #e4e4a3; } }
+    background-color: #e4e4a3; }
+    Footer .logo {
+      width: 50px;
+      height: 50px; } }
 
 @media (min-width: 768px) {
   Footer {
-    background-color: #8f8fe2; } }
+    background-color: #8f8fe2; }
+    Footer .logo {
+      width: 50px;
+      height: 50px; } }
 
 @media (min-width: 1024px) {
   Footer {
@@ -172,8 +195,19 @@ main {
   .cabecera .menus {
     flex: 100%; } }
 
-@media only screen and (max-width: 240px) {
+@media only screen and (max-width: 375px) {
   .cabecera .logo {
     flex: 100%; }
   .cabecera .menus {
-    flex: 100%; } }
+    flex: 100%; }
+    .cabecera .menus ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      .cabecera .menus ul li {
+        flex: 100%; }
+        .cabecera .menus ul li a {
+          display: block;
+          padding: .5em 1em; } }
