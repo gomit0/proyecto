@@ -210,11 +210,13 @@ main{
 
 .centro{
 .productos{
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
   img{
-    @include carto( 250px, 200px)
+    @include carto( 100%, auto)
   }
   h5{
     font-size: 16px;

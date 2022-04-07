@@ -147,8 +147,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-around; }
   .centro .productos img {
-    width: 250px;
-    height: 200px; }
+    width: 100%;
+    height: auto; }
   .centro .productos h5 {
     font-size: 16px; }
   .centro .productos p {
