@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Righteous", cursive;
+  list-style: none; }
+
+h1 {
+  text-align: center; }
+
+body {
+  background-color: white;
+  position: static; }
+  body h2 {
+    text-align: center; }
+  body .cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; }
+    body .cabecera .logo,
+    body .cabecera .menus,
+    body .cabecera .centro,
+    body .cabecera .pie {
+      text-align: center;
+      border-radius: 3px; }
+    body .cabecera nav.logo {
+      flex: 25%;
+      padding: 20px; }
+    body .cabecera nav.menus {
+      flex: 75%;
+      padding: 20px; }
+    body .cabecera .centro {
+      grid-area: centro; }
+    body .cabecera .pie {
+      grid-area: pie; }
+    body .cabecera nav {
+      padding: 1rem;
+      text-align: end; }
+      body .cabecera nav ul {
+        list-style: none;
+        background-color: #d9e4de;
+        display: flex;
+        justify-content: flex-end; }
+        body .cabecera nav ul a {
+          color: #480bf1;
+          text-decoration: none;
+          padding: 0.7rem;
+          display: block; }
+        body .cabecera nav ul li:hover {
+          background-color: #1495ac;
+          color: #4e0909;
+          font-weight: bold; }
+      body .cabecera nav .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #1ef1ab;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1; }
+      body .cabecera nav .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left; }
+      body .cabecera nav .dropdown-content a:hover {
+        background-color: #1495ac; }
+      body .cabecera nav .dropdown:hover .dropdown-content {
+        display: block; }
+    @media screen and (max-width: 768px) {
+      body .cabecera .cabecera {
+        display: flex;
+        flex-direction: column; } }
+  @media screen and (max-width: 768px) {
+    body .cuerpo {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6 1fr); } }
+
+.nuestro section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60vh; }
+
+.row {
+  height: auto;
+  display: flex;
+  justify-content: space-evenly; }
+  .row .card {
+    width: 280px;
+    height: 500px; }
+    .row .card .card-body .card-title {
+      font-family: "Righteous", cursive;
+      text-transform: uppercase;
+      text-align: center; }
+    .row .card .card-body .card-text {
+      font-family: "Righteous", cursive;
+      font-size: small; }
+    .row .card .card-body a {
+      display: flex;
+      justify-content: center; }
+
+footer {
+  display: grid;
+  background-color: #d9e4de;
+  grid-template-areas: "logs ubica hora"  "none derecho derecho";
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 3fr 1fr; }
+  footer .ubica {
+    grid-area: ubica; }
+    footer .ubica h4 {
+      font-size: 10px; }
+    footer .ubica .li_ti h4 {
+      font-size: 16px; }
+  footer .hora {
+    grid-area: hora; }
+    footer .hora h4 {
+      font-size: 10px; }
+    footer .hora .li_ti h4 {
+      font-size: 16px; }
+  footer .derecho {
+    grid-area: derecho; }
+  footer .gmap {
+    width: 600px auto;
+    height: 450px auto; }
+
+main {
+  height: auto; }
+  main .equipo {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    main .equipo .card {
+      width: 220px;
+      height: 380px;
+      opacity: 0.9;
+      transition: transform .2s; }
+      main .equipo .card p {
+        font-size: 10px; }
+    main .equipo .card:hover {
+      transform: scale(1.2);
+      opacity: 1; }
+
+.centro .productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .centro .productos img {
+    width: 250px;
+    height: 200px; }
+  .centro .productos h5 {
+    font-size: 16px; }
+  .centro .productos p {
+    font-size: 10px; }
+
+@media (min-width: 240px) {
+  Footer {
+    background-color: #e4e4a3; } }
+
+@media (min-width: 768px) {
+  Footer {
+    background-color: #8f8fe2; } }
+
+@media (min-width: 1024px) {
+  Footer {
+    background-color: #94dddd; } }
+
+@media only screen and (max-width: 768px) {
+  .cabecera .logo {
+    flex: 100%; }
+  .cabecera .menus {
+    flex: 100%; } }
+
+@media only screen and (max-width: 240px) {
+  .cabecera .logo {
+    flex: 100%; }
+  .cabecera .menus {
+    flex: 100%; } }
